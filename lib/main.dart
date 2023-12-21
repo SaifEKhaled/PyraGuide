@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
 import 'LoginPage.dart';
+import 'HomePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'PyraGuide',
       initialRoute: '/',
       routes: {
-        '/': (context) => SignUpPage(), 
         '/login': (context) => LoginPage(),
+        '/': (context) => HomePage(),
+        '/signup': (context) => SignUpPage(),
       },
     );
   }

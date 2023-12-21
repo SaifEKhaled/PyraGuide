@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
 
@@ -22,13 +23,23 @@ class LoginPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                // Handle login logic here
               },
               child: Text('Log In'),
             ),
             SizedBox(height: 16),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(
+                    builder: (context) => SignUpPage(),
+                    // transitionDuration: Duration(milliseconds: 500), // Set transition duration
+                    settings: RouteSettings(
+                      name: 'SignUpPage', // Ensure transition from left side
+                    ),
+                  ),
+                );
               },
               child: Text('Don\'t have an account? Sign Up'),
             ),
