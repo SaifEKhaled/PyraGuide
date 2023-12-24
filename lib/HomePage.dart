@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'SignUpPage.dart';
+import 'ChosenLocationPage.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -34,6 +34,41 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
+          // Chosen Location button with CupertinoPageRoute
+          Positioned(
+            bottom: 100,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => ChosenLocationPage(),
+                    ),
+                  );
+                },
+                child: Text(
+                  'CHOSEN LOCATION',
+                  style: TextStyle(
+                    fontFamily: 'Adventure Time Logo',
+                    fontSize: 24,
+                    color: Colors.white,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  primary: Color(0xFFDAA520),
+                  minimumSize: Size(250, 50),
+                  maximumSize: Size(350, 60),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
           // Explore button with CupertinoPageRoute
           Positioned(
             bottom: 40,
@@ -45,8 +80,8 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     CupertinoPageRoute(
-                      builder: (context) =>
-                          SignUpPage(), // Replace with your SignupPage class
+                      builder: (context) => SignUpPage(),
+                      // Replace with your SignupPage class
                       // transitionDuration: Duration(milliseconds: ???), // Optional: Set desired duration
                     ),
                   );

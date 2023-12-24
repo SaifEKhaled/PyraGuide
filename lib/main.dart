@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:softwaretest/ChosenLocationPage.dart';
 import 'SignUpPage.dart';
 import 'LoginPage.dart';
 import 'HomePage.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/home': (context) => HomePage(), // Use '/home' instead of '/'
         '/signup': (context) => SignUpPage(),
+        '/chosenlocation': (context) => ChosenLocationPage(),
       },
     );
   }
