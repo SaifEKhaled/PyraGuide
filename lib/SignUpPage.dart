@@ -89,7 +89,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     CupertinoPageRoute(
                       builder: (context) => LoginPage(),
                       settings: RouteSettings(
-                        name: 'LoginPage', // Ensure transition from left side
+                        name: 'LoginPage', 
                       ),
                     ),
                   );

@@ -64,7 +64,7 @@ flutter:
         - asset: Fonts/Adventure Time Logo.ttf
     - family: Inter
       fonts:
-        - asset: Inter.ttf
+        - asset: Fonts/Inter.ttf
 
 
   # The following line ensures that the Material Icons font is

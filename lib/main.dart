@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'PyraGuide',
-      initialRoute: '/',
+      initialRoute: '/home', // Set the initial route to home
       routes: {
         '/login': (context) => LoginPage(),
-        '/': (context) => HomePage(),
+        '/home': (context) => HomePage(), // Use '/home' instead of '/'
         '/signup': (context) => SignUpPage(),
       },
     );

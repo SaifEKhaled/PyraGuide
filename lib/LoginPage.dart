@@ -7,7 +7,21 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Log In'),
+        title: Text(
+          'Login',
+          style: TextStyle(
+            fontFamily: 'Inter',
+            fontSize: 24,
+            color: Color(0xFFDAA520),
+          ),
+        ),
+        centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -34,9 +48,8 @@ class LoginPage extends StatelessWidget {
                   context,
                   CupertinoPageRoute(
                     builder: (context) => SignUpPage(),
-                    // transitionDuration: Duration(milliseconds: 500), // Set transition duration
                     settings: RouteSettings(
-                      name: 'SignUpPage', // Ensure transition from left side
+                      name: 'SignUpPage',
                     ),
                   ),
                 );
@@ -49,3 +62,4 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+  
