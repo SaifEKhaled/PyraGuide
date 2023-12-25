@@ -1,4 +1,4 @@
-name: softwaretest
+name: testhere
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -28,15 +28,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  page_transition: ^2.0.0
+  
+  
   flutter:
     sdk: flutter
   google_fonts: any
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  # google_fonts: any
 
 dev_dependencies:
   flutter_test:
@@ -48,13 +49,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
+
   fonts:
     - family: Hiatus
       fonts:
@@ -65,17 +66,19 @@ flutter:
     - family: Inter
       fonts:
         - asset: Fonts/Inter.ttf
-
+  
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  assets:
-  - Images/HomePage.jpg
-  # - Fonts/Hiatus.ttf
+
   # To add assets to your application, add an assets section, like this:
   # assets:
+  assets:
+    - assets/Welcome.png
+    - assets/HomePage.jpg
+    
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
