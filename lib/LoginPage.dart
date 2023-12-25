@@ -16,8 +16,9 @@ class LoginPage extends StatelessWidget {
           ),
         ),
         centerTitle: true,
+        iconTheme: IconThemeData(color: Colors.white), // Set the color of the icon
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -62,4 +63,3 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-  

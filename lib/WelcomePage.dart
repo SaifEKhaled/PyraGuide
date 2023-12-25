@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'SignUpPage.dart';
 import 'ChosenLocationPage.dart';
 
-class HomePage extends StatelessWidget {
+class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
